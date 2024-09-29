@@ -18,7 +18,7 @@ app.use(session({
 app.use(bodyParser.json());
 
 // Middleware setup
-app.use(express.static('views'));
+// app.use(express.static('views'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
