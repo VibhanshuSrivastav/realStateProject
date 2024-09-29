@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: rgba(4, 4, 4, 0.365);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning fw-bold" href="/">
+                <img src="Images/logo.jpg" alt="Logo" style="height: 40px;">
+                Admin Login
+            </a>
+            <a href="/" class="btn btn-danger ms-auto">Exit</a>
+        </div>
+    </nav>
+    
+    <div class="container d-flex align-items-center" style="height: 80vh;">
+        <div class="row justify-content-center w-100">
+            <div class="col-md-4">
+                <form action="/login" method="post" class="p-4 border rounded shadow-sm ">
+                    <h3 class="text-center mb-4">Admin Login</h3>
+                    <input type="email" name="email" class="form-control mb-3" placeholder="Admin Email" required>
+                    <input type="password" name="password" class="form-control mb-4" placeholder="Password" required>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#loginForm').on('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        const email = $('#email').val();
+        const password = $('#password').val();
+
+        // Send the login request using AJAX
+        $.ajax({
+            url: '/login',
+            type: 'POST',
+            data: { email, password },
+            success: function(response) {
+                // Save the token in localStorage
+                localStorage.setItem('token', response.token);
+                
+                // Redirect to the dashboard
+                window.location.href = '/dashboard'; // Redirect to the dashboard
+            },
+            error: function(xhr, status, error) {
+                alert('Error logging in. Please check your credentials.');
+            }
+        });
+    });
+});
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

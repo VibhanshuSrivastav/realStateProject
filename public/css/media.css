@@ -1,0 +1,172 @@
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-right: 0;
+    }
+}
+
+
+/* Responsive layout adjustments */
+@media (max-width: 992px) {
+    .fixed-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .table-responsive {
+        margin-bottom: 1rem;
+    }
+    .master-plan-container {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 980px) {
+    .navbar {
+        width: 100%;
+    }
+    
+}
+
+
+/* Adjustments for devices smaller than 768px */
+@media (max-width: 768px) {
+    .sticker {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        margin: 20px auto;
+        padding: 15px;
+        width: 90%;
+        max-width: 100%;
+        background-color: rgba(220, 220, 220, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .soldMsg {
+        font-size: 1.3rem;
+    }
+
+    .viewMsg {
+        font-size: 1.1rem;
+    }
+    
+    .rate {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        height: auto;
+        padding: 5px;
+    }
+
+    .price {
+        margin-right: 0;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .rate span {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}
+
+/* Adjustments for devices smaller than 576px (phones) */
+@media (max-width: 576px) {
+    .sticker {
+        padding: 10px;
+        margin: 10px auto;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .soldMsg {
+        font-size: 1.2rem;
+    }
+
+    .viewMsg {
+        font-size: 1rem;
+    }
+
+    .price {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .rate span {
+        font-size: 0.9rem;
+        padding: 4px;
+    }
+    
+    .amenity img {
+        height: 40px;
+    }
+    
+    .alert {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .amenity img{
+        height: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+  
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+  
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .building-image {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card .card-img-top {
+      height: 120px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .bottom-navbar {
+        display: flex; /* Show on screens 768px or smaller */
+    }
+    .col {
+        border: 1px solid black;
+        border-radius: 10px;
+        background: black;
+        color: white;
+    }
+}

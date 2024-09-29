@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .col-md-3 {
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .table th,
+        .table td {
+            vertical-align: middle;
+        }
+
+        .table button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-warning fw-bold" href="/dashboard">
+                    <img src="../Images/logo.jpg" alt="Logo" style="height: 40px;">
+                    Admin Dashboard
+                </a>
+                <button class="btn btn-danger" id="logoutButton">Logout</button>
+            </div>
+        </nav>
+
+        <div class="row g-0">
+            <div class="col-md-3 bg-light p-3 border-end">
+                <%- include('./left.ejs')%>
+            </div>
+            <div class="col-md-9 text-center mt-4">
+                <h1>Contact Details</h1>
+                <table class="table table-responsive table-bordered" id="contactTable">
+                    <thead>
+                        <tr>
+                            <th>Serial No.</th>
+                            <th>Name</th>
+                            <th>Mobile</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% contacts.forEach((contact, index) => { %>
+                            <tr>
+                                <td><%= index + 1 %></td>
+                                <td><%= contact.Name %></td>
+                                <td><%= contact.Mobile %></td>
+                                <td>
+                                    <a href="/delete/<%= contact.id %>" class="btn btn-danger">Delete</a>
+
+
+                                </td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#logoutButton").click(function() {
+            // Send AJAX request to logout
+            $.ajax({
+                url: '/logout', // The logout route
+                method: 'GET',  // You can also use POST if preferred
+                success: function(response) {
+                    // Redirect to the login page after successful logout
+                    window.location.href = '/login';
+                },
+                error: function() {
+                    alert('Error logging out. Please try again.');
+                }
+            });
+        });
+    });
+</script>
+

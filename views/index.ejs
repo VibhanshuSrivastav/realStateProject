@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Consulate Apartments</title>
+</head>
+<body>
+
+<div class="col-md-9 col-sm-12">
+    <%- include('./common/header.ejs')%>
+
+    <video class="d-block video w-100" autoplay muted>
+        <source src="Images/intro.mp4" type="video/mp4" alt="...">
+    </video>
+    
+    <div class="col-md-9 sticker">
+        <span class="soldMsg text-center">3BHK SOLD OUT</span>
+        <div class="rate">
+            <span class="price">STARTING PRICE</span>
+            <span>&#8377;3.52 CR</span> 
+        </div>
+        <span class="viewMsg">200 ACRE FOREST VIEW</span>
+    </div>
+    
+    <section class="carousel">
+        <div class="container-fluid p-3 text-white bg-secondary">
+            <div class="row">
+                <div class="col-md-12 alertBox d-flex justify-content-center align-items-center flex-wrap p-4">
+                    <div class="alert fs-3 text-center text-white fw-bold">
+                        ONLY 4BHK LEFT
+                    </div>
+                    <div class="amenity text-center">
+                        <img src="Images/gym.png" alt="">
+                        Gymnasium
+                    </div>
+                    <div class="amenity text-center">
+                        <img src="Images/spa.png" alt="">
+                        Spa
+                    </div>
+                    <div class="amenity text-center">
+                        <img src="Images/pool.png" alt="">
+                        Pool
+                    </div>
+                    <div class="amenity text-center">
+                        <img src="Images/coffee.png" alt="">
+                        Cafe
+                    </div>
+                    <div class="amenity text-center">
+                        <img src="Images/playzone.png" alt="">
+                        Playzone
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-2 bg-secondary">
+            <div class="row">
+                <div class="col-md-4" style="position: relative;">
+                    <video src="Images/starting.mp4" class="w-100 mt-2" autoplay muted></video>
+                    <span class="starting">Starting</span>
+                </div>
+                <div class="col-md-4" style="position: relative;">
+                    <video src="Images/present.mp4" class="w-100 mt-2" autoplay muted></video>
+                    <span class="present">Present</span>
+                </div>
+                <div class="col-md-4" style="position: relative;">
+                    <video src="Images/delivery.mp4" class="w-100 mt-2" autoplay muted></video>
+                    <span class="delivery">Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+        <!-- contact section -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <h2>Schedule a Site Visit</h2>
+                            <form class="common-form" >
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="name"
+                                        placeholder="Enter Your Name here..." required>
+                                
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" name="mobile" placeholder="Phone Number"
+                                        required pattern="[0-9]{10}">
+                                
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" name="privacy" id="dataPrivacy"
+                                        required>
+                                    <label class="form-check-label" style="font-size: x-small;" for="dataPrivacy">
+                                        I consent to the use of provided data in accordance with the privacy policy
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-custom">Pre-Register Now</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="Images/contact.jpg" class="img-fluid border border-light border-3"
+                            style="border-radius: 10px;" alt="image temporarily not available">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about start -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-4 mb-lg-0 about-content">
+                        <h3>About The Consulate Apartments</h3>
+                        <p>The firm offers a full range of Architectural and Planning services including feasibility
+                            studies, programming and system analysis, master planning, contract documentation and
+                            project monitoring, architectural, land- scape and product designing, conservation and
+                            restoration, building maintenance and supervision, green building certifications along with
+                            site management and other complementary services.</p>
+                        <button class="btn btn-request-brochure" id="modalBtn">
+                            <i class="fa-solid fa-download fa-bounce" style="color: #ffffff;"></i> Request Brochure
+                        </button>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="Images/1.jpg" alt=".." class="about-image img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights" id="highlight">
+            <div class="container">
+                <h2>Highlights - The Consulate Apartments</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="highlightsItems ms-5">
+                            <img src="Images/icon-consu.png" width="50px" height="50px">
+                            <span class="highlight-text">Outdoor Pool & Kids Pool</span>
+                        </div>
+                        <div class="highlightsItems ms-5">
+                            <img src="Images/icon-consu.png" width="50px" height="50px">
+                            <span class="highlight-text">State-of-the Art Gym</span>
+                        </div>
+                        <div class="highlightsItems ms-5">
+                            <img src="Images/icon-consu.png" width="50px" height="50px">
+                            <span class="highlight-text">Indoor Heated Pool</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="highlightsItems ms-5">
+                            <img src="Images/icon-consu.png" width="50px" height="50px">
+                            <span class="highlight-text">Earthquake Compliance Structure</span>
+                        </div>
+                        <div class="highlightsItems ms-5">
+                            <img src="Images/icon-consu.png" width="50px" height="50px">
+                            <span class="highlight-text">Mini Theatre and Open-Air Theatre</span>
+                        </div>
+                        <div class="highlightsItems ms-5">
+                            <img src="Images/icon-consu.png" width="50px" height="50px">
+                            <span class="highlight-text">Earthquake Compliance Structure
+                                designed for Zone 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- aminities -->
+        <section class="amenities bg-secondary" id="amenities">
+            <div class="container">
+                <h2 class="text-center amenities-title">Luxurious Amenities</h2>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon"><i class="fa-solid fa-champagne-glasses" id="amenityIcon"></i>
+                            </div>
+                            <h6>Party Lawn</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon"><i class="fa-solid fa-dumbbell" id="amenityIcon"></i></div>
+                            <h6>Gymnasium</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon"><i class="fas fa-table-tennis" id="amenityIcon"></i> </div>
+                            <h6>Badminton court</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon"><i class="fa-solid fa-hotel" id="amenityIcon"></i></div>
+                            <h6>Banquet Hall</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon"><i class="fa-solid fa-camera" id="amenityIcon"></i></div>
+                            <h6>Observatory Deck</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon"><i class="fas fa-futbol" id="amenityIcon"></i></div>
+                            <h6>Kid's Play Area</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon"><i class="fa-solid fa-gamepad" id="amenityIcon"></i></div>
+                            <h6>Indoor Games</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="amenityItems">
+                            <div class="amenity-icon w-75"><i class="fa-solid fa-person-running" id="amenityIcon"></i>
+                            </div>
+                            <h6>Jogging Track</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-custom mt-5" id="modalBtn1">Request All Amenities</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- location section -->
+        <section class="location" id="location">
+            <div class="container">
+                <h2 class="location-title">The Consulate Apartments Location Advantage</h2>
+                <p class="location-description">
+                    The firm provides a comprehensive suite of architectural and planning services, encompassing
+                    everything from feasibility studies, programming, system analysis, and master planning to contract
+                    documentation, project monitoring, and detailed architectural, landscape, and product design.
+                    Additionally, they specialize in conservation and restoration, building maintenance and supervision,
+                    green building certifications, and site management. Their expertise also includes complementary
+                    services such as sustainability consulting, energy efficiency solutions, and advanced project
+                    coordination, ensuring that every project is meticulously planned, environmentally responsible, and
+                    executed to the highest standards.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="connectivityList">
+                            <div class="connectivityTitle" data-bs-toggle="collapse" data-bs-target="#connectivityList">
+                                <h4 class="fw-bold">2-10 Minutes Connectivity to:</h4>
+                            </div>
+                            <ul id="connectivityList" class="amenity-list collapse show">
+                                <li>0-1 Km from Dwarka Expressway</li>
+                                <li>0-1 Km from UER 2 Road</li>
+                                <li>Adjacent to International Convention Centre Dwarka</li>
+                                <li>Adjacent to Sec 25 Metro Station Dwarka</li>
+                                <li>20 Minutes From IGI Airport</li>
+                                <li>15 Minutes from NH8</li>
+                                <li>0 Km from Diplomatic Enclave 2</li>
+                                <li>In Close Proximity to AIIMS 2</li>
+                                <li>Direct Access to Delhi Mumbai Expressway</li>
+                                <li>Close to Football Stadium Sector 19</li>
+                                <li>Close to Bharat Vandana Park</li>
+                                <li>Facing 200 Acre Green Forest Zone</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-request mt-3" id="modalBtn2">Request Location Details</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-container">
+                            <img src="Images/download (6).png" class="img-fluid location-img mt-5" alt="Location Map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- floor plan section -->
+        <section id="floor-plan" style="padding-top:40px">
+            <h5 class="h5 text-center">What We Offer</h5>
+            <h1 class="text-center" style="padding-bottom:10px;">FLOOR PLAN</h1>
+
+            <div class="container-fluid">
+                <div class="gallery row justify-content-center">
+                    <!-- Image 1 -->
+                    <div class="col-sm-4 mb-4">
+                        <a href="Images/plan-1.jpg" data-lightbox="roadtrip" class="fadeInUp">
+                            <img src="Images/plan-1.jpg" alt="Floor Plan 1" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div class="col-sm-4 mb-4">
+                        <a href="Images/plan-2.jpg" data-lightbox="roadtrip" class="fadeInUp">
+                            <img src="Images/plan-2.jpg" alt="Floor Plan 2" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div class="col-sm-4 mb-4">
+                        <a href="Images/plan-3.jpg" data-lightbox="roadtrip" class="fadeInUp">
+                            <img src="Images/plan-3.jpg" alt="Floor Plan 3" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery section  -->
+        <section class="destinations py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Gallery</h2>
+                <div class="row mt-5 text-center">
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="card">
+                            <img src="Images/furniture.jpg" class="card-img-top rounded" alt="Asia">
+                            <div class="card-body">
+                                <p class="card-text">Fixtures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="card">
+                            <img src="Images/wall.jpg" class="card-img-top rounded" alt="Greece">
+                            <div class="card-body">
+                                <p class="card-text">Walls</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="card">
+                            <img src="Images/club.jpg" class="card-img-top rounded" alt="Peru">
+                            <div class="card-body">
+                                <p class="card-text">Lounge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="card">
+                            <img src="Images/spa-zone.jpg" class="card-img-top rounded" alt="Korea">
+                            <div class="card-body">
+                                <p class="card-text">Spa Zone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="card">
+                            <img src="Images/window.jpg" class="card-img-top rounded" alt="Africa">
+                            <div class="card-body">
+                                <p class="card-text">Door / Window</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="card">
+                            <img src="Images/cafe.jpg" class="card-img-top rounded" alt="Europe">
+                            <div class="card-body">
+                                <p class="card-text">Cafe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <h2>Schedule a Site Visit</h2>
+                            <form class="common-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="name"
+                                        placeholder="Enter Your Name here..." required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" name="mobile" placeholder="Phone Number" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" name="privacy" id="dataPrivacy"
+                                        required>
+                                    <label class="form-check-label" style="font-size: x-small;" for="dataPrivacy">
+                                        I consent to the use of provided data in accordance with the privacy policy
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-custom">Pre-Register Now</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="Images/contact-2.jpg" class="img-fluid border border-light border-3"
+                            style="border-radius: 10px;" alt="Site Visit Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <%- include('./common/footer.ejs') %>
+
+
+
+            <!-- Popup Form Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Schedule a Site Visit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="popupForm" class="common-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="name"
+                                        placeholder="Enter Your Name here..." required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" name="mobile" placeholder="Phone Number"
+                                        required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" name="privacy" id="dataPrivacy"
+                                        required>
+                                    <label class="form-check-label" style="font-size: x-small;" for="dataPrivacy">
+                                        I consent to the use of provided data in accordance with the privacy policy
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-custom" >Pre-Register Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<!-- left main div end -->
+</div>
+
+<!-- sidebar -->
+<div class="col-md-3 d-none d-md-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 sidebar d-lg-block">
+                <p class="text-center bg-dark text-light">Schedule Site Visit |<i class="fa-solid fa-phone fa-xs ms-2">
+                    </i> <a href="tel:+919117996473" style="color:white;">+91 9117996473</a></p>
+                <h4 class="mb-4">Pre-Register here for Best Offers</h4>
+                <form class="common-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="name" placeholder="Name*" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" name="mobile" placeholder="Mobile*" required>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="privacy" id="dataPrivacy" required>
+                        <label class="form-check-label" for="dataPrivacy">
+                            I consent to the use of provided data in accordance with the privacy policy
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </form>
+                <div class="row mt-5">
+                    <div class="col-4 text-center">
+                        <img src="Images/call.webp" alt="Instant Call Back" class="img">
+                        <p class="icon-text">Instant Call Back</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="Images/car.webp" alt="Free Site Visit" class="img">
+                        <p class="icon-text">Free Site Visit</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="Images/pay.webp" alt="Best Price" class="img">
+                        <p class="icon-text">Best Price</p>
+                    </div>
+                </div>
+                <button class="btn mt-4 btn-custom" id="modalBtn3">Request Call Back</button>
+                <div class="d-flex justify-content-end">
+                    <img src="Images/whatsapp.webp" class="icon-img bg-success p-1 rounded-circle mt-4"
+                        style="width: 50px; height: 50px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- down bar  -->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-bottom bottom-navbar">
+    <div class="row bg-light align-items-center justify-content-center w-100">
+        <div class="col-md-12 bg-black text-white rounded-5 ms-4 py-1 text-center">
+            <a class="nav-link" href="tel:+919117996473"><i class="fa-solid me-1 fa-phone fa-sm"></i> Call</a>
+        </div>
+        <div class="col-md-12 bg-black text-white mt-2 rounded-5 ms-4 py-1 text-center">
+            <a class="nav-link" href="https://api.whatsapp.com/send?phone=9117996473&text=Hi there"><i class="fa-brands me-1 fa-whatsapp fa-sm"></i>
+                WhatsApp</a>
+        </div>
+        <div class="col-md-12 bg-black text-white mt-2 rounded-5 ms-4 py-1 text-center">
+            <a class="nav-link" href="#" id="#modalBtn4">Book Site Visit</a>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<!-- scripts -->
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+        
+        const modalButtons = document.querySelectorAll('#modalBtn, #modalBtn1, #modalBtn2, #modalBtn3, #modalBtn4');
+
+        
+        modalButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                myModal.show();  
+            });
+        });
+    });
+</script>
+
+
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $('#myModal').modal('show');
+        }, 2000); // popup after 2 seconds
+    }); 
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('.common-form').on('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Get form data
+            const formData = $(this).serialize(); // Serialize form data
+            console.log(formData); // Log serialized form data
+
+            // Send the form data using fetch
+            $.ajax({
+                url: '/submit',
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    // Show a success message
+                    alert('Form submitted successfully!');
+                    $('.common-form')[0].reset(); // Optional: reset the form
+                    window.location.href = '/paymentPlan';
+                },
+                error: function(xhr, status, error) {
+                    // Show an error message
+                    // alert('Error submitting form. Please try again.');
+                    $('.common-form')[0].reset(); // Optional: reset the form
+                }
+            });
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-3 {
+    height: 100vh; /* Full height sidebar */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.col-md-3 .left-menu {
+    font-size: 18px; /* Increase font size for better readability */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700; /* Bold heading */
+}
+
+.lead {
+    font-size: 1.25rem; /* Slightly larger text for emphasis */
+    color: #6c757d; /* Muted text color */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-warning fw-bold" href="/dashboard">
+                    <img src="../Images/logo.jpg" alt="Logo" style="height: 40px;">
+                    Admin Dashboard
+                </a>
+                <button class="btn btn-danger" id="logoutButton">Logout</button>
+            </div>
+        </nav>
+        
+        <div class="row g-0">
+            <div class="col-md-3 bg-light p-3 border-end">  
+                <%- include('./left.ejs')%>
+            </div>
+            <div class="col-md-9 text-center mt-3">
+                <div class="my-5">
+                    <img src="Images/logo.jpg" style="height: 90px;" alt="">
+                    <h1 class="my-4">Welcome to Admin Panel</h1>
+                    <p class="lead text-muted">Manage your applications efficiently and effectively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#logoutButton').on('click', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Send a POST request to the logout endpoint
+        $.ajax({
+            url: '/logout',
+            type: 'GET',
+            success: function(response) {
+                // Handle successful logout
+                alert("!! Logged Out"); // Show logout message
+                window.location.href = '/login'; // Redirect to login page
+            },
+            error: function(xhr, status, error) {
+                // Handle logout error
+                alert('Error logging out. Please try again.');
+            }
+        });
+    });
+});
+</script>

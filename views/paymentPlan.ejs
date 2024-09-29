@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Consulate Apartments</title>
+
+</head>
+<body>
+        
+    <%- include('./common/header.ejs') %>
+    
+
+   <!-- Pricing and Payment Plan Section -->
+<section class="pricing-payment-section text-center">
+    <!-- Download Brochure Button -->
+    <a href="Pdf/brochure.pdf" class="btn btn-custom mb-4" download>Download Brochure</a>
+
+    <!-- Title for Pricing -->
+    <h2 class="section-title">4BHK Pricing Details (Size - 2200 Sq Ft)</h2>
+
+    <!-- Pricing Table -->
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered border mx-auto" style="max-width: 800px;">
+            <thead>
+                <tr>
+                    <th>Floor</th>
+                    <th>Size (Sq Ft)</th>
+                    <th>PLC per Sq Ft</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ground Floor</td>
+                    <td>2200</td>
+                    <td>0</td>
+                    <td>₹ 3,65,00,000</td>
+                </tr>
+                <tr>
+                    <td>1st</td>
+                    <td>2200</td>
+                    <td>0</td>
+                    <td>₹ 3,65,00,000</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>2200</td>
+                    <td>0</td>
+                    <td>₹ 3,65,00,000</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>2200</td>
+                    <td>0</td>
+                    <td>₹ 3,65,00,000</td>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>2200</td>
+                    <td>0</td>
+                    <td>₹ 3,65,00,000</td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>2200</td>
+                    <td>200</td>
+                    <td>₹ 3,69,40,000</td>
+                </tr>
+                <tr>
+                    <td>6th</td>
+                    <td>2200</td>
+                    <td>200</td>
+                    <td>₹ 3,69,40,000</td>
+                </tr>
+                <tr>
+                    <td>7th</td>
+                    <td>2200</td>
+                    <td>200</td>
+                    <td>₹ 3,69,40,000</td>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>2200</td>
+                    <td>200</td>
+                    <td>₹ 3,69,40,000</td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>2200</td>
+                    <td>400</td>
+                    <td>₹ 3,73,80,000</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>2200</td>
+                    <td>400</td>
+                    <td>₹ 3,73,80,000</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>2200</td>
+                    <td>400</td>
+                    <td>₹ 3,73,80,000</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>2200</td>
+                    <td>400</td>
+                    <td>₹ 3,73,80,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pricing Note -->
+    <p class="note">Note: Total price includes one car parking of Rs. 10,00,000/- & club membership of Rs. 3,00,000/-. PLC on Green forest facing will be charged Rs. 1000/- per sq ft extra.</p>
+
+    <!-- Title for Payment Plan -->
+    <h2 class="section-title mt-5">Payment Plan</h2>
+
+    <!-- Payment Plan Table -->
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered border mx-auto" style="max-width: 600px;">
+            <thead class="thead-light">
+                <tr>
+                    <th>Milestone</th>
+                    <th>Payment Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>At the time of submission of application form</td>
+                    <td>10% (BBA Issued)</td>
+                </tr>
+                <tr>
+                    <td>Within 60 days from BBA issued</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>On completion of 2nd Floor</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>On completion of 6th Floor</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>On completion of 10th Floor</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Start of Interior work</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>On application of OC</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>At possession</td>
+                    <td>10%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Payment Plan Note -->
+    <p class="note mt-3">Note: BBA registration fees, stamp duty, and GST applicable.</p>
+</section>
+
+<%- include('./common/footer.ejs') %>
+
+<!-- Styling -->
+<style>
+    .pricing-payment-section {
+        padding: 40px 0;
+        background-color: #f8f9fa;
+    }
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .table {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        color:black;
+        background-color: white; /* Light background */
+        border: 1px solid #ddd; /* Light borders */
+    }
+
+    .table-bordered th, .table-bordered td {
+        vertical-align: middle;
+    }
+
+    .note {
+        font-style: italic;
+        color: #555;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .btn-custom {
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #E0BF6E;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .btn-custom:hover {
+        background-color: #d1a85e;
+        color: white;
+    }
+</style>
+
+</body>
