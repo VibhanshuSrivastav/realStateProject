@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 // Middleware setup
 app.use(express.static('views'));
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
 app.use('/fontAwesome', express.static(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free')));
 app.use(express.urlencoded({ extended: true }));
