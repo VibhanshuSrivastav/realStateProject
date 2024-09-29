@@ -91,8 +91,8 @@ router.get('/dashboard',isAdminAuthenticated, async (req, res) => {
 });
 
 // Twilio configuration For whatsapp message
-const accountSid =  process.env.TWILIO_ACCOUNT_SID  ;  //'AC2d975d921846773f2726abca9ec503b4' // Your Account SID
-const authToken =  process.env.TWILIO_ACCOUNT_TOKEN ; //'08db246eda0de2534d2f3daf9d6f1c09' // Replace with your actual Auth Token
+const accountSid =  process.env.TWILIO_ACCOUNT_SID  ;   // Your Account SID
+const authToken =  process.env.TWILIO_ACCOUNT_TOKEN ;  // Replace with your actual Auth Token
 const client = twilio(accountSid, authToken);
 
 // Handling form submission
@@ -104,7 +104,7 @@ router.post('/submit', async (req, res) => {
         try {
             const message = await client.messages.create({
                 body: `New Enquiry:\nName: ${name}\nMobile: ${mobile}`,
-                from: 'whatsapp:+14155238886',
+                from: 'whatsapp:+13342316647',
                 to: 'whatsapp:+919117996473'
             });
             console.log('WhatsApp message sent:', message.sid);
