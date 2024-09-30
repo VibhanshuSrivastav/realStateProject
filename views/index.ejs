@@ -1,7 +1,12 @@
-
-
-    <title>The Consulate Apartments</title>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 
 <div class="col-md-9 col-sm-12">
     <%- include('./common/header.ejs')%>
@@ -55,15 +60,15 @@
         <div class="container p-2 bg-secondary">
             <div class="row">
                 <div class="col-md-4" style="position: relative;">
-                    <video src="/images/starting.mp4" class="w-100 mt-2" autoplay muted></video>
+                    <video src="/images/starting.mp4" class="w-100 mt-2" autoplay muted loop></video>
                     <span class="starting">Starting</span>
                 </div>
                 <div class="col-md-4" style="position: relative;">
-                    <video src="/images/present.mp4" class="w-100 mt-2" autoplay muted></video>
+                    <video src="/images/present.mp4" class="w-100 mt-2" autoplay muted loop></video>
                     <span class="present">Present</span>
                 </div>
                 <div class="col-md-4" style="position: relative;">
-                    <video src="/images/delivery.mp4" class="w-100 mt-2" autoplay muted></video>
+                    <video src="/images/delivery.mp4" class="w-100 mt-2" autoplay muted loop></video>
                     <span class="delivery">Delivery</span>
                 </div>
             </div>
@@ -74,10 +79,10 @@
 
         <!-- contact section -->
         <section class="contact">
-            <div class="container">
+            <div class="container" id="form">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="contact-form">
+                        <div class="contact-form"  >
                             <h2>Schedule a Site Visit</h2>
                             <form class="common-form" >
                                 <div class="mb-3">
@@ -489,15 +494,15 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-bottom bottom-navbar">
     <div class="row bg-light align-items-center justify-content-center w-100">
-        <div class="col-md-12 bg-black text-white rounded-5 ms-4 py-1 text-center">
+        <div class="col bg-black text-white rounded-5 ms-4 py-2 text-center">
             <a class="nav-link" href="tel:+919117996473"><i class="fa-solid me-1 fa-phone fa-sm"></i> Call</a>
         </div>
-        <div class="col-md-12 bg-black text-white mt-2 rounded-5 ms-4 py-1 text-center">
+        <div class="col bg-black text-white mt-2 rounded-5 ms-4 py-2 text-center">
             <a class="nav-link" href="https://api.whatsapp.com/send?phone=9117996473&text=Hi there"><i class="fa-brands me-1 fa-whatsapp fa-sm"></i>
                 WhatsApp</a>
         </div>
-        <div class="col-md-12 bg-black text-white mt-2 rounded-5 ms-4 py-1 text-center">
-            <a class="nav-link" href="#" id="#modalBtn4">Book Site Visit</a>
+        <div class="col bg-black text-white mt-2 rounded-5 ms-4 py-2 text-center">
+            <a class="nav-link" href="#form" id="#modalBtn4">Book Site Visit</a>
         </div>
 
 
@@ -567,3 +572,5 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
